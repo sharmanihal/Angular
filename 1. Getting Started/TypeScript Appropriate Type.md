@@ -42,4 +42,33 @@ value = 42; // Both assignments are valid
 - **`!`**: Asserts that a value is not `null` or `undefined`.
 - **`|`**: Defines a union type, allowing a variable to hold one of several types.
 
-These operators help make TypeScript more flexible and powerful by allowing you to handle optional values, assert non-null values, and define variables that can hold multiple types¹²³. Let me know if you have any more questions!
+These operators help make TypeScript more flexible and powerful by allowing you to handle optional values, assert non-null values, and define variables that can hold multiple types.
+
+
+###  Custome Type 
+In TypeScript, you can define custom types using either the `type` keyword or the `interface` keyword. Both serve to describe the shape of an object, but they have some differences in their usage and capabilities.
+
+### Using `type` Keyword:
+```typescript
+type User = {
+  id: string;
+  name: string;
+  avatar: string;
+};
+```
+
+### Using `interface` Keyword:
+```typescript
+interface User {
+  id: string;
+  name: string;
+  avatar: string;
+}
+```
+
+### Key Difference
+**Complex Types**:
+   - `type` can represent more complex types like unions, tuples, and mapped types.
+   - `interface` is primarily used for object shapes.
+
+Both are powerful tools, and the choice between them often comes down to personal preference and specific use cases. Do you have a preference for one over the other?
